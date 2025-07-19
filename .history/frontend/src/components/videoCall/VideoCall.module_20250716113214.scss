@@ -1,0 +1,43 @@
+.videoCallOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.videoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.localVideo {
+  width: 240px;
+  height: 180px;
+  background: #222;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.remoteVideo {
+  width: 480px;
+  height: 360px;
+  background: #111;
+  border-radius: 8px;
+}
+
+.callControls {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+} 

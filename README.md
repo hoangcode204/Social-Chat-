@@ -46,7 +46,7 @@ Chào mừng bạn đến với Ứng Dụng Chat Realtime của tôi! Đây là
 - **npm** hoặc **yarn**
 - **Java JDK** (phiên bản 11 trở lên)
 - **Maven** (phiên bản 3.6 trở lên)
-- **PostgreSQL** (phiên bản 12 trở lên)
+- **MySQL** 
 
 ### Bước 1: Clone Repository
 
@@ -71,10 +71,10 @@ mvn clean install
 
 ### Bước 4: Cấu Hình Database
 
-1. Tạo database PostgreSQL mới
+1. Tạo database MySQL mới
 2. Cập nhật file `backend/src/main/resources/application.properties`:
    ```properties
-   spring.datasource.url=jdbc:postgresql://localhost:5432/your_database_name
+   spring.datasource.url=jdbc:mysql://localhost:5432/your_database_name
    spring.datasource.username=your_username
    spring.datasource.password=your_password
    ```
